@@ -85,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'gobe_community',
         'USER': 'postgres',
-        'PASSWORD' : 'typewritter',
+        'PASSWORD' : 'password',
         'HOST': 'localhost',
         'PORT': '5432',
     }

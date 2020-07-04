@@ -83,11 +83,7 @@ WSGI_APPLICATION = 'gobe_central.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gobe_community',
-        'USER': 'postgres',
-        'PASSWORD' : 'typewritter',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': 
     }
 }
 
