@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import environ
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -21,14 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'default_value')
+SECRET_KEY = 'xg@=^ptr^aaq%_j44+t9x^z0e@(n0@!9!roo2x6u+#e6f7g!=8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# DEBUG = os.environ.get('SECRET_KEY', 'default_value')
 
 ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -89,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'gobe_community',
         'USER': 'postgres',
-        'PASSWORD' : os.environ.get('DB_PASS'),
+        'PASSWORD' : 'typewritter',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -133,4 +132,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
