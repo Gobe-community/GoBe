@@ -1,0 +1,5 @@
+django
+psycopg2
+pytest
+ptest-django
+pytest-cov
